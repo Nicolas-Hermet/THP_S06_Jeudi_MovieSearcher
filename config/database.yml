@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: THP_S06_Jeudi_2MovieSearcher_production
-  username: THP_S06_Jeudi_2MovieSearcher
-  password: <%= ENV['THP_S06_JEUDI_2MOVIESEARCHER_DATABASE_PASSWORD'] %>
+  database: THP_S06_Jeudi_2MovieSearcher_development
