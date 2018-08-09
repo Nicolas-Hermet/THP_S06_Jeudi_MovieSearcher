@@ -1,15 +1,177 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>THPS06Jeudi2moviesearcher</title>
+    <title>Scrap OKLM</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700"> -->
+    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:300,400,700", media: 'screen'%>
+    <%= stylesheet_link_tag "bootstrap.min.css"%>
+    <%= stylesheet_link_tag "font-awesome.min.css"%>
+    <%= stylesheet_link_tag "bootstrap-theme.css", media: 'screen'%>
+    <%= stylesheet_link_tag "main.css"%>
+<!--     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
+
+    <!-- Custom styles for our template -->
+   <!--  <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+    <link rel="stylesheet" href="assets/css/main.css"> -->
   </head>
 
   <body>
+    <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top headroom" >
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Button for smallest screens -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href=<%= root_path %>><%= image_tag ( "logo.png") %></a>
+        
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li class="active"><a href= <%= root_path %> >Home</a></li>
+          <li><a href="#">Là ya rien</a></li>
+          <li><a href="#">Là non plus</a></li>
+          <li class="dropdown">
+            <a href="https://soundcloud.com/kourtek-live/mozinor-sa-fait-peur-au-chien" class="dropdown-toggle" data-toggle="dropdown">D'autres pages inutiles <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://soundcloud.com/kourtek-live/mozinor-sa-fait-peur-au-chien">Ca sert à rien</a></li>
+              <li class="active"><a href="https://soundcloud.com/kourtek-live/mozinor-sa-fait-peur-au-chien">Mais ça fait peur aux chiens</a></li>
+            </ul>
+          </li>
+          <li><a class="btn" href="#">SIGN PAS !</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div> 
+  <!-- /.navbar -->
+
+  <!-- Header -->
+  <header id="head">
+    <div class="container">
+      <div class="row">
+        <h1 class="lead">Cherche ton flim</h1>
+        <p class="tagline">Parce là tu te dis que j'ai fait une faute de frappe...</p>
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/j3HQSdVMUGw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+      </div>
+    </div>
+  </header>
+  <!-- /Header -->
+
+  <!-- Intro -->
+  <div class="container text-center">
+    <br> <br>
+    <h2 class="thin">D'autres conneries du template</h2>
+    <p class="text-muted">
+      Franchement j'allais pas me prendre la tête à t'expliquer<br> 
+      ce qu'il faut faire : tu vas t'en sortir comme un grand.
+    </p>
+  </div>
+  <!-- /Intro-->
+    
+
     <%= yield %>
+
+
+<!-- Social links. @TODO: replace by link/instructions in template -->
+  <section id="social">
+    <div class="container">
+      <div class="wrapper clearfix">
+        <!-- AddThis Button BEGIN -->
+        <div class="addthis_toolbox addthis_default_style">
+        <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+        <a class="addthis_button_tweet"></a>
+        <a class="addthis_button_linkedin_counter"></a>
+        <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+        </div>
+        <!-- AddThis Button END -->
+      </div>
+    </div>
+  </section>
+  <!-- /social links -->
+
+
+  <footer id="footer" class="top-space">
+
+    <div class="footer1">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-3 widget">
+            <h3 class="widget-title">Contact</h3>
+            <div class="widget-body">
+              <p>+234 23 9873237<br>
+                <a href="mailto:#">some.email@somewhere.com</a><br>
+                <br>
+                234 Hidden Pond Road, Ashland City, TN 37015
+              </p>  
+            </div>
+          </div>
+
+          <div class="col-md-3 widget">
+            <h3 class="widget-title">Follow me</h3>
+            <div class="widget-body">
+              <p class="follow-me-icons">
+                <a href=""><i class="fa fa-twitter fa-2"></i></a>
+                <a href=""><i class="fa fa-dribbble fa-2"></i></a>
+                <a href=""><i class="fa fa-github fa-2"></i></a>
+                <a href=""><i class="fa fa-facebook fa-2"></i></a>
+              </p>  
+            </div>
+          </div>
+
+          <div class="col-md-6 widget">
+            <h3 class="widget-title">Text widget</h3>
+            <div class="widget-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
+              <p>Eius consequatur nihil quibusdam! Laborum, rerum, quis, inventore ipsa autem repellat provident assumenda labore soluta minima alias temporibus facere distinctio quas adipisci nam sunt explicabo officia tenetur at ea quos doloribus dolorum voluptate reprehenderit architecto sint libero illo et hic.</p>
+            </div>
+          </div>
+
+        </div> <!-- /row of widgets -->
+      </div>
+    </div>
+
+    <div class="footer2">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-6 widget">
+            <div class="widget-body">
+              <p class="simplenav">
+                <a href="#">Home</a> | 
+                <a href="about.html">About</a> |
+                <a href="sidebar-right.html">Sidebar</a> |
+                <a href="contact.html">Contact</a> |
+                <b><a href="signup.html">Sign up</a></b>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 widget">
+            <div class="widget-body">
+              <p class="text-right">
+                Copyright &copy; 2014, Your name. Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a> 
+              </p>
+            </div>
+          </div>
+
+        </div> <!-- /row of widgets -->
+      </div>
+    </div>
+
+  </footer> 
+  <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+  javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+  javascript_include_tag "http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"
+  javascript_include_tag "headroom.min.js"
+  javascript_include_tag "jQuery.headroom.min.js"
+  javascript_include_tag "template.js"
+
   </body>
 </html>
