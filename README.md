@@ -1,24 +1,35 @@
-# README
+# Movie Searcher
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Pour lancer l'appli sur serveur distant : 
+https://thp-moviesearcher.herokuapp.com/search
 
-* Ruby version
 
-* System dependencies
+## Installation en local : 
+Après un clone faite : 
+```
+$> bundle install --without production
+$> rails db:create
+$> rails db:migrate
+$> rails db:seed
+$> rails s
+```
+Puis lancer localhost:3000 dans votre navigateur
 
-* Configuration
+#### Ruby version
+2.5.1
 
-* Database creation
+#### Rails version
+5.2.0
 
-* Database initialization
 
-* How to run the test suite
+## Team-Programing :boom: : 
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* @farida
+* @Nicolas B
+* @Gabrielle Silvano
+* @lise
+* @Matcha
+* @Nico Hermet
+* @Salah
+Yes : we're a team, deal with it.
