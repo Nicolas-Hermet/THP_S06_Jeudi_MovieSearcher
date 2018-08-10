@@ -2,7 +2,7 @@
 
 
 ## Pour lancer l'appli sur serveur distant : 
-https://thp-moviesearcher.herokuapp.com/search
+https://thp-moviesearcher.herokuapp.com
 
 
 ## Installation en local : 
